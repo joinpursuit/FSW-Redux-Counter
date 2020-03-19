@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT, SET } from "./actionTypes";
+import { INCREMENT, DECREMENT } from "./actionTypes";
 
 export const incrementCount = () => {
   return { type: INCREMENT };
@@ -7,7 +7,3 @@ export const incrementCount = () => {
 export const decrementCount = () => {
   return { type: DECREMENT };
 };
-
-export const setCount = (value) => {
-  return { type: SET, value }
-}
