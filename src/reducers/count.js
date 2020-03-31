@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT, SET } from "../actions/actionTypes";
+import { INCREMENT, DECREMENT, DOUBLE } from "../actions/actionTypes";
 
 export default (state = 0, action) => {
   switch (action.type) {
@@ -6,8 +6,8 @@ export default (state = 0, action) => {
       return state + 1;
     case DECREMENT:
       return state - 1;
-    case SET:
-      return action.value
+    case DOUBLE:
+      return state * 2;
     default:
       return state;
   }
